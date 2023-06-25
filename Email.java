@@ -8,7 +8,7 @@ public class Email {
     private String email;
     private String altEmail;
     private int maxCapacity;
-    private String emailSufix = "@ucdonnect.ie";
+    private String emailSufix = "ucdonnect.ie";
 
     public Email(){
         this.firstName = setFirstName();
@@ -106,7 +106,7 @@ public class Email {
     }
 
     private String generateEmail(){
-        String email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + college.toLowerCase() + "." + emailSufix;
+        String email = firstName.toLowerCase() + lastName.toLowerCase() + "@" + college.toLowerCase() + "." + emailSufix;
         return email;
     }
 
