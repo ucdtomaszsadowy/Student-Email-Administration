@@ -11,10 +11,8 @@ public class Email {
     public Email(){
         this.firstName = setFirstName();
         this.lastName = setLastName();
-        //System.out.println("Name: " +firstName+ " "+ lastName);
-
         this.college = setCollege(); 
-        //System.out.println("College: "+ college);
+        this.password = generatePassword();
     }
 
     //Asking student for details
@@ -74,5 +72,23 @@ public class Email {
 
     String getCollege(){
         return college;
+    }
+
+    private String generatePassword() {
+        String validChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        int passwordLength = 8; // Adjust the length as needed
+        StringBuilder password = new StringBuilder();
+
+        for (int i = 0; i < passwordLength; i++) {
+            int randomIndex = (int) (Math.random() * validChars.length());
+            password.append(validChars.charAt(randomIndex));
+        }
+
+        return password.toString();
+    }
+
+    // Password Getter
+    String getPassword() {
+        return password;
     }
 }

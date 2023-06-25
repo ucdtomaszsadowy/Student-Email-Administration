@@ -5,5 +5,6 @@ public class App {
         System.out.println("------Student Details------");
         System.out.println("Name: " +student1.getFirstName()+ " " + student1.getLastName());
         System.out.println("College: " +student1.getCollege());
+        System.out.println("Password: " +student1.getPassword());
     }
 }
