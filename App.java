@@ -1,10 +1,11 @@
 public class App {
     public static void main(String[] args) {
-        Email student1 = new Email();
+        Email student = new Email();
         System.out.print("\n");
         System.out.println("------Student Details------");
-        System.out.println("Name: " +student1.getFirstName()+ " " + student1.getLastName());
-        System.out.println("College: " +student1.getCollege());
-        System.out.println("Password: " +student1.getPassword());
+        System.out.println("Name: " +student.getFirstName()+ " " + student.getLastName());
+        System.out.println("College: " +student.getCollege());
+        System.out.println("Password: " +student.getPassword());
+        System.out.println("Your Email is: " +student.getEmail());
     }
 }
