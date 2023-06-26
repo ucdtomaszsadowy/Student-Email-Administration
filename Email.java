@@ -6,9 +6,7 @@ public class Email {
     private String password;
     private String college;
     private String email;
-    private String altEmail;
-    private int maxCapacity;
-    private String emailSufix = "ucdonnect.ie";
+    private String emailSufix = "ucdconnect.ie";
 
     public Email(){
         this.firstName = setFirstName();
@@ -100,7 +98,6 @@ public class Email {
         return password.toString();
     }
 
-    // Password Getter
     String getPassword() {
         return password;
     }
